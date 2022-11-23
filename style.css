@@ -92,12 +92,19 @@ button {
 
 /* navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-pink);
+    background-color: transparent;
     color: var(--color-white);
     padding: 16px;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-pink);
+    transition: all var(--animation-duration) ease-in-out;
 }
 
 .nav__menu {
@@ -145,6 +152,7 @@ button {
     text-align: center;
     color: var(--color-white);
     padding: 40px;
+    padding-top: 120px;
 }
 
 #home img {
