@@ -99,7 +99,8 @@ button {
     align-items: center;
     background-color: transparent;
     color: var(--color-white);
-    padding: 16px;
+    padding: 12px;
+    z-index: 1;
 }
 
 #navbar.navbar--dark {
