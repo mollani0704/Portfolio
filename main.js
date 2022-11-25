@@ -2,9 +2,6 @@ const navbar = document.querySelector('#navbar');
 
 // navbar fixed로 고정시키고 특정 스크롤 부분에서 색 변화.
 document.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-    console.log(navbar.getBoundingClientRect().height);
-
     if (window.scrollY > navbar.getBoundingClientRect().height) {
         navbar.classList.add('navbar--dark');
     } else {
@@ -12,14 +9,11 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// navbar memnu button을 누르면 해당 페이지로 스크롤 됨.
 const nav_menu = document.querySelector('.nav__menu');
 const contactBtn = document.querySelector('.home__button');
-const contact = document.querySelector('#contact');
 
 nav_menu.addEventListener('click', event => {
-    console.log(event.target);
-    console.log(event.target.dataset.link);
-
     let target = event.target;
     let link = event.target.dataset.link;
 
@@ -27,10 +21,21 @@ nav_menu.addEventListener('click', event => {
         return;
     }
 
-    let page = document.querySelector(link);
-    page.scrollIntoView({behavior: 'smooth'});
+    scrollIntoViews(link);
 });
 
 contactBtn.addEventListener('click', () => {
-    contact.scrollIntoView({behavior: 'smooth'});
+    scrollIntoViews('#contact');
+});
+
+function scrollIntoViews(selector) {
+    let scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'});
+}
+
+// 스크롤 내릴 때 home 화면 투명
+const home_container = document.querySelector('.home__container');
+
+document.addEventListener('scroll', () => {
+    home_container.style.opacity = 1 - window.scrollY / home.getBoundingClientRect().height;
 });
