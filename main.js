@@ -55,3 +55,27 @@ document.addEventListener('scroll', () => {
 topArrowBtn.addEventListener('click', () => {
     home.scrollIntoView({behavior: 'smooth'});
 });
+
+// work category filtering
+const work_category = document.querySelector('.work__category');
+const work_projects = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+work_category.addEventListener('click', event => {
+    const target = event.target;
+    const filter = target.dataset.filter || target.parentNode.dataset.filter;
+
+    work_projects.classList.add('anima-out');
+
+    setTimeout(() => {
+        projects.forEach(project => {
+            if (project.dataset.project == filter || filter == '*') {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+
+        work_projects.classList.remove('anima-out');
+    }, 300);
+});
