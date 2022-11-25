@@ -1,5 +1,7 @@
 const navbar = document.querySelector('#navbar');
 
+const home = document.querySelector('#home');
+
 // navbar fixed로 고정시키고 특정 스크롤 부분에서 색 변화.
 document.addEventListener('scroll', () => {
     if (window.scrollY > navbar.getBoundingClientRect().height) {
@@ -38,4 +40,18 @@ const home_container = document.querySelector('.home__container');
 
 document.addEventListener('scroll', () => {
     home_container.style.opacity = 1 - window.scrollY / home.getBoundingClientRect().height;
+});
+
+//arrow Button에 관한 것
+const topArrowBtn = document.querySelector('.top__arrow--btn');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > home.getBoundingClientRect().height / 2) {
+        topArrowBtn.classList.add('visible');
+    } else {
+        topArrowBtn.classList.remove('visible');
+    }
+});
+
+topArrowBtn.addEventListener('click', () => {
+    home.scrollIntoView({behavior: 'smooth'});
 });
