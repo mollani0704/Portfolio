@@ -117,6 +117,7 @@ button {
     margin: 0px 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
+    border: 1px solid transparent;
 }
 
 .navbar__logo {
@@ -129,12 +130,9 @@ button {
     height: 25px;
 }
 
-.navbar__menu__item.active {
-    border: 1px solid var(--color-light-white);
-}
-
 .navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
+    border-color: var(--color-light-white);
 }
 
 .toggle__btn {

@@ -14,9 +14,9 @@ document.addEventListener('scroll', () => {
 // navbar memnu button을 누르면 해당 페이지로 스크롤 됨.
 const nav_menu = document.querySelector('.nav__menu');
 const contactBtn = document.querySelector('.home__button');
+const menu_item = document.querySelectorAll('.navbar__menu__item');
 
 nav_menu.addEventListener('click', event => {
-    let target = event.target;
     let link = event.target.dataset.link;
 
     if (link == null || link == undefined) {
@@ -62,8 +62,13 @@ const work_projects = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 
 work_category.addEventListener('click', event => {
-    const target = event.target;
-    const filter = target.dataset.filter || target.parentNode.dataset.filter;
+    const filter = event.target.dataset.filter || target.parentNode.dataset.filter;
+    const active = document.querySelector('.category__btn.active');
+
+    active.classList.remove('active');
+
+    const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+    target.classList.add('active');
 
     work_projects.classList.add('anima-out');
 
