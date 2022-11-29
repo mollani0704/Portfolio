@@ -71,13 +71,14 @@ const work_projects = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 
 work_category.addEventListener('click', event => {
-    const filter = event.target.dataset.filter || target.parentNode.dataset.filter;
-    const active = document.querySelector('.category__btn.active');
-
-    active.classList.remove('active');
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
 
     const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
     target.classList.add('active');
+
+    const active = document.querySelector('.category__btn.active');
+
+    active.classList.remove('active');
 
     work_projects.classList.add('anima-out');
 

@@ -141,6 +141,7 @@ button {
 
     position: absolute;
     right: 20px;
+    top: 20px;
 
     display: none;
 }
@@ -174,6 +175,10 @@ button {
     border-radius: var(--size-border-radius);
     margin: 24px;
     padding: 8px 12px;
+}
+
+.home__button:hover {
+    background-color: var(--color-orange);
 }
 
 /* Section Common */
@@ -292,6 +297,7 @@ button {
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 
 .category__btn.active,
@@ -313,8 +319,9 @@ button {
     display: inline-block;
     line-height: 24px;
     color: var(--color-white);
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: -25px;
+    right: 10px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
 }
@@ -467,7 +474,37 @@ button {
     transform: scale(1.2);
 }
 
+.top__arrow--btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-pink);
+    border-radius: 50%;
+
+    opacity: 0;
+    pointer-events: none;
+
+    color: var(--color-white);
+    font-size: var(--font-medium);
+}
+
+.top__arrow--btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+
     .toggle__btn {
         display: block;
     }
@@ -489,12 +526,18 @@ button {
         display: flex;
     }
 
+    .section {
+        padding: 16px;
+    }
+
     .majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
     }
 
     .skillset {
@@ -505,29 +548,33 @@ button {
         flex-grow: 1;
     }
 
+    .testimonial {
+        flex-direction: column;
+    }
+
     .testimonial__avatar {
         width: 80px;
         height: 80px;
     }
-}
 
-.top__arrow--btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: var(--color-pink);
-    border-radius: 50%;
+    .testimonial__avatar:nth-child(even),
+    .testimonial__avatar:nth-child(odd) {
+        margin: 0;
+        margin-bottom: 8px;
+    }
 
-    opacity: 0;
-    pointer-events: none;
+    .testimonial__speech--bubble {
+        order: 1;
+    }
 
-    color: var(--color-white);
-    font-size: var(--font-medium);
-}
+    .top__arrow--btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        right: 16px;
+        bottom: 16px;
 
-.top__arrow--btn.visible {
-    opacity: 1;
-    pointer-events: auto;
+        z-index: 1;
+    }
 }
