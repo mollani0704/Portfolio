@@ -24,6 +24,8 @@ nav_menu.addEventListener('click', event => {
     }
 
     scrollIntoViews(link);
+
+    nav_menu.classList.toggle('active');
 });
 
 contactBtn.addEventListener('click', () => {
@@ -34,6 +36,13 @@ function scrollIntoViews(selector) {
     let scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
+
+// toggle button
+const toggleBtn = document.querySelector('.toggle__btn');
+
+toggleBtn.addEventListener('click', () => {
+    nav_menu.classList.toggle('active');
+});
 
 // 스크롤 내릴 때 home 화면 투명
 const home_container = document.querySelector('.home__container');
