@@ -24,18 +24,12 @@ nav_menu.addEventListener('click', event => {
     }
 
     scrollIntoViews(link);
-
-    nav_menu.classList.toggle('active');
+    selectedMenuItem(event.target);
 });
 
 contactBtn.addEventListener('click', () => {
     scrollIntoViews('#contact');
 });
-
-function scrollIntoViews(selector) {
-    let scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: 'smooth'});
-}
 
 // toggle button
 const toggleBtn = document.querySelector('.toggle__btn');
@@ -62,7 +56,7 @@ document.addEventListener('scroll', () => {
 });
 
 topArrowBtn.addEventListener('click', () => {
-    home.scrollIntoView({behavior: 'smooth'});
+    scrollIntoViews('#home');
 });
 
 // work category filtering
@@ -94,3 +88,75 @@ work_category.addEventListener('click', event => {
         work_projects.classList.remove('anima-out');
     }, 300);
 });
+
+// 스크롤시 메뉴 활성화
+// 1. 모든 섹션 요소들을 가지고 온다.
+// 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
+
+const navItems = ['#home', '#about', '#skill', '#work', '#testimonials', '#contact'];
+const sectionItems = navItems.map(nav => document.querySelector(nav));
+const navbar_menu = navItems.map(nav => document.querySelector(`[data-link="${nav}"]`));
+
+let selectedMenu = navbar_menu[0];
+let selectedIndex = 0;
+
+function selectedMenuItem(selected) {
+    selectedMenu.classList.remove('active');
+    selectedMenu = selected;
+    selectedMenu.classList.add('active');
+}
+
+function scrollIntoViews(selector) {
+    let scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'});
+    selectedMenuItem(navbar_menu[navItems.indexOf(selector)]);
+}
+
+const observerOption = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
+};
+
+const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+            const index = navItems.indexOf(`#${entry.target.id}`);
+
+            if (entry.boundingClientRect.y < 0) {
+                selectedIndex = index + 1;
+            } else {
+                selectedIndex = index - 1;
+            }
+        }
+    });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOption);
+
+sectionItems.forEach(section => {
+    observer.observe(section);
+});
+
+window.addEventListener('wheel', () => {
+    if (window.scrollY === 0) {
+        selectedIndex = 0;
+    } else if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+        selectedIndex = navbar_menu.length - 1;
+    }
+    selectedMenuItem(navbar_menu[selectedIndex]);
+});
+
+// const sections = document.querySelectorAll('section');
+// const callback = (entries, observer) => {
+//     entries.forEach(entry => {
+//         console.log(entry.target.id);
+//     });
+// };
+
+// const observer = new IntersectionObserver(callback);
+
+// sections.forEach(section => {
+//     observer.observe(section);
+// });
