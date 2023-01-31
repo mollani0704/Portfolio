@@ -5,13 +5,13 @@
     --color-light-white: #eeeeee;
     --color-dark-white: #dbdbdb;
     --color-dark-navy: #06283d;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
+    --color-pink: #1363df;
+    --color-dark-pink: #47b5ff;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
     --color-blue: #73aace;
-    --color-yellow: #fff7d1;
+    --color-yellow: #dff6ff;
     --color-orange: #feb546;
     --color-black: #000000;
 
@@ -203,7 +203,7 @@ button {
 
 .majors {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 80px 0;
 }
 
@@ -307,7 +307,7 @@ button {
 
 .category__btn.active,
 .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: var(--color-dark-pink);
 }
 
 .category__btn:hover .category__count,
