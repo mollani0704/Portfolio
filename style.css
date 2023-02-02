@@ -11,8 +11,8 @@
     --color-grey: #616161;
     --color-light-grey: #7c7979;
     --color-blue: #73aace;
+    --color-orange: #ffd54f;
     --color-yellow: #dff6ff;
-    --color-orange: #feb546;
     --color-black: #000000;
 
     /* Font size */
@@ -183,7 +183,7 @@ button {
 }
 
 .home__button:hover {
-    background-color: var(--color-orange);
+    background-color: var(--color-dark-navy);
 }
 
 /* Section Common */
@@ -312,12 +312,11 @@ button {
 
 .category__btn:hover .category__count,
 .category__btn.active .category__count {
-    top: 0px;
+    top: 5px;
     opacity: 1;
 }
 
 .category__count {
-    background-color: var(--color-orange);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -325,7 +324,7 @@ button {
     line-height: 24px;
     color: var(--color-white);
     position: absolute;
-    top: -25px;
+    top: -30px;
     right: 10px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
@@ -411,43 +410,6 @@ button {
 
     transform: translateX(-50%);
     margin-top: 8px;
-}
-
-/* testimonals */
-#testimonials {
-    background-color: var(--color-dark-white);
-}
-
-.testimonial {
-    display: flex;
-    align-items: center;
-    margin: 32px 0;
-}
-
-.testimonial__avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.testimonial__avatar:nth-child(odd) {
-    margin-right: 40px;
-}
-
-.testimonial__avatar:nth-child(even) {
-    margin-left: 40px;
-}
-
-.testimonial__speech--bubble {
-    background-color: var(--color-light-white);
-}
-
-.testimonial__speech--bubble p {
-    color: var(--color-dark-grey);
-}
-
-.testimonial__speech--bubble a {
-    color: var(--color-pink);
 }
 
 /* contack */
