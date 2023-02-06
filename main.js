@@ -94,7 +94,7 @@ work_category.addEventListener('click', event => {
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
 
-const navItems = ['#home', '#about', '#skill', '#work', '#testimonials', '#contact'];
+const navItems = ['#home', '#about', '#skill', '#work', '#contact'];
 const sectionItems = navItems.map(nav => document.querySelector(nav));
 const navbar_menu = navItems.map(nav => document.querySelector(`[data-link="${nav}"]`));
 
