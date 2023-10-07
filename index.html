@@ -4,48 +4,82 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Portfolio for looking for job" />
+        <meta name="description" content="문몰래의 포트폴리오 사이트" />
         <meta name="author" content="jongseong" />
-        <title>Mollani's Portfolio</title>
-        <script
-            src="https://kit.fontawesome.com/0f941af2a1.js"
-            crossorigin="anonymous"
-        ></script>
+        <title>Mollani&#39;s Portfolio</title>
+        <link
+            rel="shortcut icon"
+            href="imgs/profile_ico.ico"
+            type="image/x-icon"
+        />
+
+        <!-- OG(Open Graph Data) -->
+        <meta property="og:title" content="문몰래의 포트폴리오" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="배포후 생성된 URL" />
+        <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/0f941af2a1.js"
+            crossorigin="anonymous"
+        ></script>
+
         <link rel="icon" href="./imgs/favicon.png" />
         <link rel="stylesheet" href="./style.css" />
         <script src="./main.js" defer></script>
-        <!-- <script src="./practice.js" defer></script> -->
     </head>
     <body>
-        <!-- navbar -->
-        <button class="top__arrow--btn">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <img src="./imgs/favicon.png" alt="" />
-                <a href="#">Moon's Portfolio</a>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <img
+                    class="header__logo__img"
+                    src="images/profile_circle.png"
+                    alt=""
+                />
+                <h1 class="header__logo__title"><a href="#">Mollani</a></h1>
             </div>
-            <ul class="nav__menu active">
-                <li class="navbar__menu__item active" data-link="#home">
-                    Home
-                </li>
-                <li class="navbar__menu__item" data-link="#about">About</li>
-                <li class="navbar__menu__item" data-link="#skill">Skill</li>
-                <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#contact">Contact</li>
-            </ul>
-
-            <button class="toggle__btn">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li>
+                        <a class="header__menu__item active" href="#home"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header__menu__item" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="header__menu__item" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="header__menu__item" href="#work">My work</a>
+                    </li>
+                    <li>
+                        <a class="header__menu__item" href="#testimonials"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header__menu__item" href="#contact"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle" aria-label="navigation menu toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
-        </nav>
+        </header>
         <!-- home -->
         <section id="home">
             <div class="home__container">
