@@ -147,50 +147,48 @@ button:focus {
 
 /* Home */
 #home {
-    background: url('./imgs/background-home.png') center;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
     text-align: center;
-    color: var(--color-white);
-    padding: 40px;
-    padding-top: 120px;
 }
 
-#home img {
-    width: 300px;
-    height: 350px;
-    border-radius: 50%;
-    border: 2px solid var(--color-light-white);
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid var(--color-accent);
 }
 
-.home__title,
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home__title--strong {
+    color: var(--color-accent);
+}
+
 .home__description {
-    color: var(--color-white);
+    font-size: 1.3rem;
 }
 
-.home__button {
-    color: var(--color-white);
-    border: 2px solid var(--color-white);
-    font-size: var(--font-regular);
-    font-weight: var(--weight-semi-bold);
-    border-radius: var(--size-border-radius);
-    margin: 24px;
-    padding: 8px 12px;
+.home__contact {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-.home__button:hover {
-    background-color: var(--color-dark-navy);
-}
-
-/* Section Common */
-.section {
-    padding: 50px;
-    text-align: center;
-
-    margin: auto;
-}
-
-.section__container {
-    max-width: 1200px;
-    margin: auto;
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);
 }
 
 /* About */
