@@ -7,6 +7,14 @@
     --color-accent-variant: var(--color-orange);
     --color-text: var(--color-white);
 
+    /* Background */
+    --home-bg-gradient: linear-gradient(
+        180deg,
+        rgba(28, 83, 182, 1) 0%,
+        rgba(5, 10, 19, 1) 100%
+    );
+    --home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23050A13' width='11' height='11'/%3E%3Crect fill='%23060c16' x='10' width='11' height='11'/%3E%3Crect fill='%23080e18' y='10' width='11' height='11'/%3E%3Crect fill='%23090f1a' x='20' width='11' height='11'/%3E%3Crect fill='%230a111d' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%230b121f' y='20' width='11' height='11'/%3E%3Crect fill='%230b1421' x='30' width='11' height='11'/%3E%3Crect fill='%230c1524' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%230c1626' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%230c1828' y='30' width='11' height='11'/%3E%3Crect fill='%230c192b' x='40' width='11' height='11'/%3E%3Crect fill='%230c1a2d' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%230c1b30' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%230c1c32' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%230b1d35' y='40' width='11' height='11'/%3E%3Crect fill='%230b1e38' x='50' width='11' height='11'/%3E%3Crect fill='%230b203a' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%230b213d' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%230a223f' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%230a2342' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%230a2444' y='50' width='11' height='11'/%3E%3Crect fill='%23092547' x='60' width='11' height='11'/%3E%3Crect fill='%2309274a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%2308284c' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%2308294f' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23082a52' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23072b54' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23072c57' x='70' width='11' height='11'/%3E%3Crect fill='%23062e5a' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23062f5d' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%2305305f' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23053162' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23043265' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23043368' x='80' width='11' height='11'/%3E%3Crect fill='%2304356a' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%2303366d' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23033770' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23033873' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23033976' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23033a78' x='90' width='11' height='11'/%3E%3Crect fill='%23033c7b' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23033d7e' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23043e81' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23043f84' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23044087' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%2305418a' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%2306428c' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%2307448f' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23084592' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23094695' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230b4798' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230d489b' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230e499e' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23104aa1' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23124ba3' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23134da6' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23154ea9' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23174fac' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%231950af' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%231B51B2' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+
     /* Colors */
     --color-white: #ffffff;
     --color-black: #050a13;
@@ -16,10 +24,17 @@
 
     /* Size */
     --size-max-width: 1200px;
+
+    /* Divider */
+    --divider-multi-wave: url('data:image/svg+xml;utf8,<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path> <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path> <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path></svg>');
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -147,11 +162,29 @@ button:focus {
 
 /* Home */
 #home {
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background: var(--home-bg-gradient);
+    background-image: var(--home-bg-svg);
+    background-size: cover;
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 1.3px);
+    height: 121px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: var(--color-black);
+    mask: var(--divider-multi-wave);
+    -webkit-mask: var(--divider-multi-wave);
 }
 
 .home__avatar {
@@ -225,67 +258,27 @@ button:focus {
 .major:hover .major__icon {
     transform: rotate(-15deg) scale(1.2);
 }
-/* skills */
-
-/* #skill {
-    background-color: var(--color-yellow);
-}
-
-.skillset {
-    display: flex;
-    background-color: var(--color-light-grey);
-    margin: 20px 0;
-    color: var(--color-white);
-}
-
-.skillset__left {
-    flex-basis: 60%;
-    background-color: var(--color-dark-grey);
-    padding: 20px 40px;
-}
-
-.skill {
-    margin-bottom: 32px;
-}
-
-.skill__description {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill__bar {
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-grey);
-}
-
-.skill__value {
-    width: 99%;
-    height: 3px;
-    background-color: var(--color-orange);
-}
-
-.skillset__right {
-    flex-basis: 40%;
-}
-
-.skillset__title {
-    margin-top: 0px;
-}
-
-.tools {
-    background-color: var(--color-grey);
-}
-
-.tools,
-.etc {
-    padding: 20px;
-} */
 
 /* Skills */
 #skills {
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+}
+
+#skills::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(113% + 1.3px);
+    height: 44px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: var(--color-primary);
+    mask: var(--divider-multi-wave);
+    -webkit-mask: var(--divider-multi-wave);
 }
 
 .skills {
@@ -603,85 +596,87 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
-    :root {
-        /* Font size */
-        --font-large: 30px;
-        --font-medium: 18px;
-        --font-regular: 16px;
-        --font-small: 14px;
-        --font-micro: 12px;
+    .section {
+        padding: 4rem 2rem;
     }
 
-    .toggle__btn {
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: start;
+        background-color: var(--color-primary);
+    }
+
+    .header__toggle {
         display: block;
     }
 
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: var(--color-pink);
-    }
-
-    .nav__menu {
+    .header__menu {
         display: none;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        text-align: center;
+        margin: 1rem 4rem;
+        gap: 1rem;
     }
 
-    .nav__menu.active {
+    .header__menu.open {
         display: flex;
     }
 
-    .section {
-        padding: 16px;
+    .header__nav {
+        width: 100%;
+    }
+
+    #home {
+        padding-bottom: 3rem;
+    }
+
+    .home__title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .majors {
         flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 0px;
+        align-items: center;
     }
 
     .major {
-        margin-bottom: 30px;
+        max-width: 25rem;
     }
 
-    .skillset {
+    .job {
+        justify-content: center;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
         flex-direction: column;
     }
 
-    .project {
-        flex-grow: 1;
+    .category {
+        width: 100%;
     }
 
-    .testimonial {
-        flex-direction: column;
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .testimonial__avatar {
-        width: 80px;
-        height: 80px;
-    }
-
-    .testimonial__avatar:nth-child(even),
-    .testimonial__avatar:nth-child(odd) {
-        margin: 0;
-        margin-bottom: 8px;
-    }
-
-    .testimonial__speech--bubble {
-        order: 1;
-    }
-
-    .top__arrow--btn {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        line-height: 40px;
-        right: 16px;
-        bottom: 16px;
-
-        z-index: 1;
+    .arrow-up {
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 }
