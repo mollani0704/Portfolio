@@ -163,6 +163,7 @@ button:focus {
 /* Home */
 #home {
     /* background-color: var(--color-primary); */
+    position: relative;
     background: var(--home-bg-gradient);
     background-image: var(--home-bg-svg);
     background-size: cover;
