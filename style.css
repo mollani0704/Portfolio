@@ -82,7 +82,7 @@ button:focus {
 }
 
 .description {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 0.5rem 0;
 }
 
@@ -162,10 +162,10 @@ button:focus {
 
 /* Home */
 #home {
-    /* background-color: var(--color-primary); */
+    background-color: var(--color-primary);
     position: relative;
-    background: var(--home-bg-gradient);
-    background-image: var(--home-bg-svg);
+    /* background: var(--home-bg-gradient); */
+    /* background-image: var(--home-bg-svg); */
     background-size: cover;
     color: var(--color-text);
     padding: 5rem 1rem;
@@ -298,6 +298,10 @@ button:focus {
     color: var(--color-accent);
     margin: 1rem 0;
     font-size: 1.2rem;
+}
+
+.skill_desc {
+    margin: 0 2.2rem;
 }
 
 .skills__coding {
@@ -462,10 +466,136 @@ button:focus {
 
 /* Work */
 #work {
-    background-color: var(--color-primary);
-    color: var(--color-text);
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
+.project {
+    background-color: white;
+    margin-bottom: 2rem;
+    height: 45rem;
+    color: black;
+}
+
+.project__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-variant);
+    border-radius: 8px;
+}
+
+.content__description {
+    /* background-color: #fd6413; */
+    height: 100%;
+    padding: 1.4rem;
+}
+
+.content__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__title {
+    font-size: 2.3rem;
+    color: var(--color-accent);
+}
+
+.content__period {
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 1.3rem;
+}
+
+.content__explanation {
+    width: 80%;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.content__explanation p {
+    color: var(--color-white);
+    /* bold가 옆에 image에 영향을 줌 */
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.horizon {
+    width: 80%;
+    border: 1px solid var(--color-accent);
+    margin-top: 1.3rem;
+}
+
+.content__tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.3rem;
+}
+
+.tool__title {
+    text-align: left;
+    width: 80%;
+    color: var(--color-accent);
+}
+
+.tool__images {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content__image {
+    height: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #fd6413; */
+}
+
+.logo__image {
+    width: 5rem;
+}
+
+.project__link {
+    width: 37rem;
+    height: 100%;
+}
+
+.project__image {
+    width: 100%;
+    height: 100%;
+}
+
+.image__side__container {
+    /* background-color: #03e8f9; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 1.5rem 0 0;
+    margin-top: 1.5rem;
+}
+
+.project__image__side {
+    width: 15rem;
+    height: 9rem;
+    margin-left: 0.5rem;
+}
+
+/* 
 .categories {
     display: flex;
     justify-content: center;
@@ -565,6 +695,7 @@ button:focus {
     height: 2px;
     background-color: var(--color-accent);
 }
+ */
 
 /* Arrow up */
 .arrow-up {
@@ -582,7 +713,8 @@ button:focus {
 
 /* Footer */
 #contact {
-    color: var(--color-black);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .contact__links {
@@ -594,7 +726,7 @@ button:focus {
 }
 
 .contact__link {
-    color: var(--color-black);
+    color: var(--color-white);
     transition: color 250ms ease-in;
 }
 
@@ -685,5 +817,22 @@ button:focus {
         height: 3rem;
         bottom: 1.5rem;
         right: 1.5rem;
+    }
+
+    /* work project 부분 */
+    .project {
+        height: 100rem;
+    }
+    .project__contents {
+        flex-direction: column;
+    }
+
+    .project__link {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .image__side__container {
+        flex-direction: column;
     }
 }
