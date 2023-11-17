@@ -525,7 +525,7 @@ button:focus {
 .content__explanation p {
     color: var(--color-white);
     /* bold가 옆에 image에 영향을 줌 */
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 0.5rem;
 }
 
