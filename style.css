@@ -501,7 +501,7 @@ button:focus {
 }
 
 .content__title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: var(--color-accent);
 }
 
