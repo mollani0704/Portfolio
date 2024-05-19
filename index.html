@@ -1,119 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="문몰래의 포트폴리오 사이트" />
-        <meta name="author" content="jongseong" />
-        <title>Mollani&#39;s Portfolio</title>
-        <link
-            rel="shortcut icon"
-            href="imgs/profile_ico.ico"
-            type="image/x-icon"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="문몰래의 포트폴리오 사이트" />
+    <meta name="author" content="jongseong" />
+    <title>Mollani&#39;s Portfolio</title>
+    <link rel="shortcut icon" href="imgs/profile_ico.ico" type="image/x-icon" />
 
-        <!-- OG(Open Graph Data) -->
-        <meta property="og:title" content="문몰래의 포트폴리오" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="배포후 생성된 URL" />
-        <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- OG(Open Graph Data) -->
+    <meta property="og:title" content="문몰래의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Font Awesome -->
-        <script
-            src="https://kit.fontawesome.com/0f941af2a1.js"
-            crossorigin="anonymous"
-        ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0f941af2a1.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- Typeit -->
-        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-        <link rel="icon" href="./imgs/favicon.png" />
-        <link rel="stylesheet" href="./style.css" />
-        <script src="./src/main.js" defer></script>
-        <script src="./src/active_menu.js" defer></script>
-        <script src="./src/type.js" defer></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="header__logo">
-                <img
-                    class="header__logo__img"
-                    src="imgs/profile_cirlce.png"
-                    alt=""
-                />
-                <h1 class="header__logo__title"><a href="#">Mollani</a></h1>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__menu">
-                    <li>
-                        <a class="header__menu__item active" href="#home"
-                            >Home</a
-                        >
-                    </li>
-                    <li>
-                        <a class="header__menu__item" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="header__menu__item" href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="header__menu__item" href="#work">My work</a>
-                    </li>
-                    <li>
-                        <a class="header__menu__item" href="#contact"
-                            >Contact</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__toggle" aria-label="navigation menu toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </header>
-        <!-- main -->
-        <main>
-            <!-- home -->
-            <section id="home" class="section">
-                <div class="max-container home__container">
-                    <img
-                        class="home__avatar"
-                        src="imgs/profile_cirlce.png"
-                        alt="Mollani's profile"
-                    />
-                    <div>
-                        <h2 class="home__title">
-                            Hello <br />I&#39;m
-                            <strong class="home__title--strong"
-                                >JongSeong Moon</strong
-                            >
-                        </h2>
-                        <p class="home__description">
-                            저는 문제를 제대로 정의하고 소통 능력이 뛰어난
-                            개발자가 되는 것이 목표입니다.
-                        </p>
-                        <a class="home__contact" href="#contact">Contact me</a>
-                    </div>
-                </div>
-            </section>
-            <section id="about" class="section max-container">
-                <h2 class="title">About me</h2>
-                <p class="description">
-                    저에게 개발자란 단순히 코드를 짜고 서비스를 만들어내는
-                    기술을 발전 시키는 것을 넘어서 내 옆의 동료들, 그리고 팀과
-                    나 자신이 같이 성장하는 직업을 의미합니다. 뿐만 아니라 다른
-                    분야의 사람들과도 교류를 하면서 창의적인 아이디어와 서비스를
-                    개발해 내는 것이 저의 목표입니다.
-                    <!-- 팀 프로젝트의 백엔드 부분 제가 맡으면서 Spring과 AWS
+    <link rel="icon" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./src/main.js" defer></script>
+    <script src="./src/active_menu.js" defer></script>
+    <script src="./src/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="imgs/profile_cirlce.png" alt="" />
+        <h1 class="header__logo__title"><a href="#">Mollani</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li>
+            <a class="header__menu__item active" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#work">My work</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- home -->
+      <section id="home" class="section">
+        <div class="max-container home__container">
+          <img
+            class="home__avatar"
+            src="imgs/profile_cirlce.png"
+            alt="Mollani's profile"
+          />
+          <div>
+            <h2 class="home__title">
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">JongSeong Moon</strong>
+            </h2>
+            <p class="home__description">
+              저는 문제를 제대로 정의하고 소통 능력이 뛰어난 개발자가 되는 것이
+              목표입니다.
+            </p>
+            <a class="home__contact" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          저에게 개발자란 단순히 코드를 짜고 서비스를 만들어내는 기술을 발전
+          시키는 것을 넘어서 내 옆의 동료들, 그리고 팀과 나 자신이 같이 성장하는
+          직업을 의미합니다. 뿐만 아니라 다른 분야의 사람들과도 교류를 하면서
+          창의적인 아이디어와 서비스를 개발해 내는 것이 저의 목표입니다.
+          <!-- 팀 프로젝트의 백엔드 부분 제가 맡으면서 Spring과 AWS
                     Database를 사용하여 진행했습니다. 프론트부분은 React로
                     개발하려 했지만 팀원2명이 개인사정으로 이탈하면서 시간과
                     역량이 부족하다 판단해 Thymeleaf로 교체해 프로젝트를
@@ -127,136 +112,114 @@
                     언어에 대한 이해와 의사소통능력을 기르고 나아가 다른 분야의
                     사람들과도 교류하면서 창의적인 아이디어와 서비스를 개발해
                     회사에 보탬이 되는 것이 저의 목표입니다. -->
-                </p>
-                <ul class="majors">
-                    <li class="major">
-                        <i class="fa-brands fa-html5 major__icon"></i>
-                        <p class="major__title">Front-end</p>
-                        <p>
-                            HTML, CSS , JavaScript, JSP<br />Thymeleaf, React,
-                            Vue
-                        </p>
-                    </li>
-                    <li class="major">
-                        <i class="fa-solid fa-server major__icon"></i>
-                        <p class="major__title">Back-end</p>
-                        <p>
-                            Java, MySQL, MariaDB <br />
-                            Spring, JPA, AJAX
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <!-- Skills -->
-            <section id="skills" class="section">
-                <div class="max-container">
-                    <h2 class="title">My Skills</h2>
-                    <p class="description skill_desc">
-                        웹 개발에 있어서 기본적인 CRUD 흐름과 프로젝트를 만들고
-                        경험했습니다. 비전공자이지만 개발자에게 있어서 중요한
-                        팀과의 소통, 그리고 협력능력은 대외활동을 통해서 많이
-                        습득했습니다. 주 언어는 Java이고 Spring 프레임워크를
-                        통한 프로젝트를 많이 경험했습니다.
-                    </p>
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS , JavaScript, JSP<br />Thymeleaf, React, Vue</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>
+              Java, MySQL, MariaDB <br />
+              Spring, JPA, AJAX
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description skill_desc">
+            웹 개발에 있어서 기본적인 CRUD 흐름과 프로젝트를 만들고
+            경험했습니다. 비전공자이지만 개발자에게 있어서 중요한 팀과의 소통,
+            그리고 협력능력은 대외활동을 통해서 많이 습득했습니다. 주 언어는
+            Java이고 Spring 프레임워크를 통한 프로젝트를 많이 경험했습니다.
+          </p>
 
-                    <div class="skills">
-                        <section class="skills__coding">
-                            <h3>Coding Skills</h3>
-                            <ul>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>HTML</span><span>98%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 98%"
-                                        ></div>
-                                    </div>
-                                </li>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>CSS</span><span>90%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 90%"
-                                        ></div>
-                                    </div>
-                                </li>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>JavaScript</span><span>80%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 80%"
-                                        ></div>
-                                    </div>
-                                </li>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>React</span><span>60%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 60%"
-                                        ></div>
-                                    </div>
-                                </li>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>Java</span><span>75%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 75%"
-                                        ></div>
-                                    </div>
-                                </li>
-                                <li class="bar">
-                                    <div class="bar__metadata">
-                                        <span>Spring</span><span>70%</span>
-                                    </div>
-                                    <div class="bar__bg">
-                                        <div
-                                            class="bar__value"
-                                            style="width: 70%"
-                                        ></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="skills__tools">
-                            <h3>Tools</h3>
-                            <ul>
-                                <li><span>Visual Studio Code</span></li>
-                                <li><span>Spring Tool Suite</span></li>
-                                <li><span>Eclipse</span></li>
-                                <li><span>IntelliJ IDEA</span></li>
-                                <li><span>HeidiSQL</span></li>
-                                <li><span>MySQL</span></li>
-                                <li><span>Postman</span></li>
-                            </ul>
-                        </section>
-                        <section class="skills__etc">
-                            <h3>Etc</h3>
-                            <ul>
-                                <li>Git</li>
-                                <li>SVN</li>
-                                <li>exERD</li>
-                                <li>전자정부 프레임워크</li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3>Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>60%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 60%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Java</span><span>75%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 75%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Spring</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+              </ul>
             </section>
-            <!-- work -->
-            <!-- <section id="work" class="section">
+            <section class="skills__tools">
+              <h3>Tools</h3>
+              <ul>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Spring Tool Suite</span></li>
+                <li><span>Eclipse</span></li>
+                <li><span>IntelliJ IDEA</span></li>
+                <li><span>HeidiSQL</span></li>
+                <li><span>MySQL</span></li>
+                <li><span>Postman</span></li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3>Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>SVN</li>
+                <li>exERD</li>
+                <li>전자정부 프레임워크</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- work -->
+      <!-- <section id="work" class="section">
             <div class="section__container">
                 <h1>projects</h1>
                 <div class="work__category">
@@ -386,457 +349,399 @@
                 </div>
             </div>
         </section> -->
-            <!-- Work -->
-            <section id="work" class="section">
-                <div class="max-container">
-                    <h2 class="title">My work</h2>
-                    <p class="description">Projects</p>
-                    <div class="project">
-                        <ul class="project__contents">
-                            <li class="content__description">
-                                <div>
-                                    <h1 class="content__title watcha">
-                                        LMS(Learning Management System)
-                                    </h1>
-                                    <div class="content__detail">
-                                        <p class="content__period">
-                                            24.03 ~ 04 / 팀 프로젝트
-                                        </p>
-                                        <div class="content__explanation">
-                                            <p>
-                                                강사의 수강생 정보, 학습자료,
-                                                과제관리, 이력서관리 페이지 구현
-                                            </p>
-                                            <p>
-                                                강사, 학생, 관리자으로 나누어
-                                                접근 권한 부여
-                                            </p>
-                                            <p>
-                                                CRUD와 파일 업로드 다운로드 구현
-                                            </p>
-                                        </div>
-                                        <div class="horizon"></div>
-                                        <div class="content__explanation">
-                                            <p>
-                                                8명이서 한 팀을 이뤄서
-                                                프로젝트를 진행했습니다.
-                                                화면설계서와 사용사 정의서를
-                                                분석해서 프로젝트에 대한 ERD 설
-                                                계 및 DB구축
-                                            </p>
-                                            <p>
-                                                이 과정에서 복합키 개념을 알게
-                                                되었고 파일 업로드와 다운로드를
-                                                구현해보면서 CRUD에 대해 더 깊게
-                                                학습 및 SQL 쿼리문에 대한
-                                                자신감도 얻을 수 있었습니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content__tool">
-                                    <h2 class="tool__title">TOOL</h2>
-                                    <div class="tool__images">
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/spring_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/sub-logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/Java-Logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/jsp-logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/html_css_js-removebg-preview.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/mysql_logo.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="content__image">
-                                <a class="project__link" href="#">
-                                    <img
-                                        class="project__image"
-                                        src="imgs/projects/LMS/LMS_main2.png"
-                                        alt=""
-                                    />
-                                </a>
-                                <div class="image__side__container">
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/LMS/LMS_sub.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/LMS/LMS_sub2.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/LMS/LMS_sub3.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </li>
-                        </ul>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <div class="project">
+            <ul class="project__contents">
+              <li class="content__description">
+                <div>
+                  <h1 class="content__title watcha">
+                    LMS(Learning Management System)
+                  </h1>
+                  <div class="content__detail">
+                    <p class="content__period">24.03 ~ 04 / 팀 프로젝트</p>
+                    <div class="content__explanation">
+                      <p>
+                        강사의 수강생 정보, 학습자료, 과제관리, 이력서관리
+                        페이지 구현
+                      </p>
+                      <p>강사, 학생, 관리자으로 나누어 접근 권한 부여</p>
+                      <p>CRUD와 파일 업로드 다운로드 구현</p>
                     </div>
-                    <div class="project">
-                        <ul class="project__contents">
-                            <li class="content__description">
-                                <div>
-                                    <h1 class="content__title watcha">
-                                        WatchaPedia
-                                    </h1>
-                                    <div class="content__detail">
-                                        <p class="content__period">
-                                            22.09 ~ 10 / 팀 프로젝트
-                                        </p>
-                                        <div class="content__explanation">
-                                            <p>
-                                                Spring과 JPA를 활용한 블로그
-                                                구현
-                                            </p>
-                                            <p>
-                                                Spring Security, Oauth를 이용해
-                                                로그인, 회원가입 구현
-                                            </p>
-                                            <p>
-                                                글쓰기, 수정, 삭제 등 CRUD 구현
-                                            </p>
-                                            <p>
-                                                비밀번호 해시처리 및 Ajax를
-                                                이용한 데이터 전달
-                                            </p>
-                                        </div>
-                                        <div class="horizon"></div>
-                                        <div class="content__explanation">
-                                            <p>
-                                                팀장을 새로 맡으면서 프로젝트를
-                                                다시 구성하고 팀원과 소통하며
-                                                역할 부여하며 프로젝트를
-                                                진행했습니다
-                                            </p>
-                                            <p>
-                                                Oauth2 로그인 구현 및 백엔드
-                                                구현(DB구성, 주요기능들
-                                                구현)하는 역할을 맡았습니다
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="content__tool">
-                                    <h2 class="tool__title">TOOL</h2>
-                                    <div class="tool__images">
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/spring_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/amazon-rds.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/Java-Logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/thymeleaf_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/html_css_js-removebg-preview.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/mariadb-logo.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="content__image">
-                                <a
-                                    class="project__link"
-                                    href="https://github.com/mollani0704/WatchaPedia_Project_Backup"
-                                    target="_blank"
-                                >
-                                    <img
-                                        class="project__image"
-                                        src="imgs/projects/watcha/watcha_image.png"
-                                        alt=""
-                                    />
-                                </a>
-                                <div class="image__side__container">
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/watcha/Login.JPG"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/watcha/wish_like.JPG"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/watcha/comment.JPG"
-                                        alt=""
-                                    />
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="horizon"></div>
+                    <div class="content__explanation">
+                      <p>
+                        8명이서 한 팀을 이뤄서 프로젝트를 진행했습니다.
+                        화면설계서와 사용사 정의서를 분석해서 프로젝트에 대한
+                        ERD 설 계 및 DB구축
+                      </p>
+                      <p>
+                        이 과정에서 복합키 개념을 알게 되었고 파일 업로드와
+                        다운로드를 구현해보면서 CRUD에 대해 더 깊게 학습 및 SQL
+                        쿼리문에 대한 자신감도 얻을 수 있었습니다.
+                      </p>
                     </div>
-                    <div class="project">
-                        <ul class="project__contents">
-                            <li class="content__description">
-                                <div>
-                                    <h1 class="content__title blueshirt">
-                                        BlueShirt
-                                    </h1>
-                                    <div class="content__detail">
-                                        <p class="content__period">
-                                            23.07 / 개인 프로젝트
-                                        </p>
-                                        <div class="content__explanation">
-                                            <p>
-                                                회원가입, 로그인 기능 및
-                                                데이터들에 대한 유효성 검사
-                                            </p>
-                                            <p>
-                                                이용자 청소 상담 신청 서비스
-                                                구현
-                                            </p>
-                                            <p>
-                                                청소 작업에 대한 후기 작성 기능
-                                                구현
-                                            </p>
-                                        </div>
-                                        <div class="horizon"></div>
-                                        <div class="content__explanation">
-                                            <p>
-                                                전체적인 CRUD에 대한 흐름과
-                                                개념에 대해서 확립할 수 있었던
-                                                계기가 되었습니다
-                                            </p>
-                                            <p>
-                                                사용자에게 어떻게 하면 더 나은
-                                                서비스를 제공할 수 있을까
-                                                생각하면서 UI / UX에 대한
-                                                중요성을 배웠습니다
-                                            </p>
-                                            <p>
-                                                AWS Database를 사용했지만 과금
-                                                문제가 있어서 Local에서 MYSQL로
-                                                전환하면서 Spring과 Database간
-                                                연결에 대한 이해가 생겼습니다
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                  </div>
+                </div>
 
-                                <div class="content__tool">
-                                    <h2 class="tool__title">TOOL</h2>
-                                    <div class="tool__images">
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/spring_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/thymeleaf_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/Java-Logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/html_css_js-removebg-preview.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/mysql_logo.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="content__image">
-                                <a
-                                    class="project__link"
-                                    href="https://github.com/mollani0704/blueShirt"
-                                    target="_blank"
-                                >
-                                    <img
-                                        class="project__image"
-                                        src="imgs/projects/blueshirt/blueshirt_image.png"
-                                        alt=""
-                                    />
-                                </a>
-                                <div class="image__side__container">
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blueshirt/review.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blueshirt/estimate2.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blueshirt/review3.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </li>
-                        </ul>
+                <div class="content__tool">
+                  <h2 class="tool__title">TOOL</h2>
+                  <div class="tool__images">
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/spring_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/sub-logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/Java-Logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/jsp-logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/html_css_js-removebg-preview.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/mysql_logo.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="content__image">
+                <a class="project__link" href="#">
+                  <img
+                    class="project__image"
+                    src="imgs/projects/LMS/LMS_main2.png"
+                    alt=""
+                  />
+                </a>
+                <div class="image__side__container">
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/LMS/LMS_sub.png"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/LMS/LMS_sub2.png"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/LMS/LMS_sub3.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <ul class="project__contents">
+              <li class="content__description">
+                <div>
+                  <h1 class="content__title watcha">WatchaPedia</h1>
+                  <div class="content__detail">
+                    <p class="content__period">22.09 ~ 10 / 팀 프로젝트</p>
+                    <div class="content__explanation">
+                      <p>Spring과 JPA를 활용한 블로그 구현</p>
+                      <p>
+                        Spring Security, Oauth를 이용해 로그인, 회원가입 구현
+                      </p>
+                      <p>글쓰기, 수정, 삭제 등 CRUD 구현</p>
+                      <p>비밀번호 해시처리 및 Ajax를 이용한 데이터 전달</p>
                     </div>
-                    <!-- <div class="project">
-                        <ul class="project__contents">
-                            <li class="content__description">
-                                <div>
-                                    <h1 class="content__title blog">
-                                        IT'S BLOG
-                                    </h1>
-                                    <div class="content__detail">
-                                        <p class="content__period">
-                                            23.04/개인 프로젝트
-                                        </p>
-                                        <div class="content__explanation">
-                                            <p>
-                                                Spring과 JPA를 활용한 블로그
-                                                구현
-                                            </p>
-                                            <p>
-                                                Spring Security, Oauth를 이용해
-                                                로그인, 회원가입 구현
-                                            </p>
-                                            <p>
-                                                글쓰기, 수정, 삭제 등 CRUD 구현
-                                            </p>
-                                            <p>
-                                                비밀번호 해시처리 및 Ajax를
-                                                이용한 데이터 전달
-                                            </p>
-                                        </div>
-                                        <div class="horizon"></div>
-                                        <div class="content__explanation">
-                                            <p>
-                                                MyBatis를 이용한 프로젝트를
-                                                해왔었는데 개발에 더욱 집중할 수
-                                                있는 JPA의 기술에 대해 배울 수
-                                                있었던 시간이었습니다.
-                                            </p>
-                                            <p>
-                                                스프링 MVC 디자인패턴 대해서
-                                                배울 수 있는 프로젝트였습니다.
-                                            </p>
-                                            <p>
-                                                Spring의 버전이 업그레이드가
-                                                되면서 Security 구현코드가
-                                                바뀌면서 새로 구현해보는
-                                                시간이었습니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="horizon"></div>
+                    <div class="content__explanation">
+                      <p>
+                        팀장을 새로 맡으면서 프로젝트를 다시 구성하고 팀원과
+                        소통하며 역할 부여하며 프로젝트를 진행했습니다
+                      </p>
+                      <p>
+                        Oauth2 로그인 구현 및 백엔드 구현(DB구성, 주요기능들
+                        구현)하는 역할을 맡았습니다
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                                <div class="content__tool">
-                                    <h2 class="tool__title">TOOL</h2>
-                                    <div class="tool__images">
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/spring_logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/jpa_logo-removebg-preview.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/Java-Logo.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/html_css_js-removebg-preview.png"
-                                            alt=""
-                                        />
-                                        <img
-                                            class="logo__image"
-                                            src="imgs/logo_img/mysql_logo.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="content__image">
-                                <a
-                                    class="project__link"
-                                    href="https://github.com/mollani0704/blog-project"
-                                    target="_blank"
-                                >
-                                    <img
-                                        class="project__image"
-                                        src="imgs/projects/blog/blog_image2.png"
-                                        alt=""
-                                    />
-                                </a>
-                                <div class="image__side__container">
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blog/Login.JPG"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blog/write.JPG"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="project__image__side"
-                                        src="imgs/projects/blog/signup.JPG"
-                                        alt=""
-                                    />
-                                </div>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!--
+                <div class="content__tool">
+                  <h2 class="tool__title">TOOL</h2>
+                  <div class="tool__images">
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/spring_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/amazon-rds.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/Java-Logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/thymeleaf_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/html_css_js-removebg-preview.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/mariadb-logo.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="content__image">
+                <a
+                  class="project__link"
+                  href="https://github.com/mollani0704/WatchaPedia_Project_Backup"
+                  target="_blank"
+                >
+                  <img
+                    class="project__image"
+                    src="imgs/projects/watcha/watcha_image.png"
+                    alt=""
+                  />
+                </a>
+                <div class="image__side__container">
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/watcha/Login.JPG"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/watcha/wish_like.JPG"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/watcha/comment.JPG"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <ul class="project__contents">
+              <li class="content__description">
+                <div>
+                  <h1 class="content__title blueshirt">BlueShirt</h1>
+                  <div class="content__detail">
+                    <p class="content__period">23.07 / 개인 프로젝트</p>
+                    <div class="content__explanation">
+                      <p>
+                        회원가입, 로그인 기능 및 데이터들에 대한 유효성 검사
+                      </p>
+                      <p>이용자 청소 상담 신청 서비스 구현</p>
+                      <p>청소 작업에 대한 후기 작성 기능 구현</p>
+                    </div>
+                    <div class="horizon"></div>
+                    <div class="content__explanation">
+                      <p>
+                        전체적인 CRUD에 대한 흐름과 개념에 대해서 확립할 수
+                        있었던 계기가 되었습니다
+                      </p>
+                      <p>
+                        사용자에게 어떻게 하면 더 나은 서비스를 제공할 수 있을까
+                        생각하면서 UI / UX에 대한 중요성을 배웠습니다
+                      </p>
+                      <p>
+                        AWS Database를 사용했지만 과금 문제가 있어서 Local에서
+                        MYSQL로 전환하면서 Spring과 Database간 연결에 대한
+                        이해가 생겼습니다
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content__tool">
+                  <h2 class="tool__title">TOOL</h2>
+                  <div class="tool__images">
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/spring_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/thymeleaf_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/Java-Logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/html_css_js-removebg-preview.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/mysql_logo.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="content__image">
+                <a
+                  class="project__link"
+                  href="https://github.com/mollani0704/blueShirt"
+                  target="_blank"
+                >
+                  <img
+                    class="project__image"
+                    src="imgs/projects/blueshirt/blueshirt_image.png"
+                    alt=""
+                  />
+                </a>
+                <div class="image__side__container">
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blueshirt/review.png"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blueshirt/estimate2.png"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blueshirt/review3.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <ul class="project__contents">
+              <li class="content__description">
+                <div>
+                  <h1 class="content__title blog">IT'S BLOG</h1>
+                  <div class="content__detail">
+                    <p class="content__period">23.04/개인 프로젝트</p>
+                    <div class="content__explanation">
+                      <p>Spring과 JPA를 활용한 블로그 구현</p>
+                      <p>
+                        Spring Security, Oauth를 이용해 로그인, 회원가입 구현
+                      </p>
+                      <p>글쓰기, 수정, 삭제 등 CRUD 구현</p>
+                      <p>비밀번호 해시처리 및 Ajax를 이용한 데이터 전달</p>
+                    </div>
+                    <div class="horizon"></div>
+                    <div class="content__explanation">
+                      <p>
+                        MyBatis를 이용한 프로젝트를 해왔었는데 개발에 더욱
+                        집중할 수 있는 JPA의 기술에 대해 배울 수 있었던
+                        시간이었습니다.
+                      </p>
+                      <p>
+                        스프링 MVC 디자인패턴 대해서 배울 수 있는
+                        프로젝트였습니다.
+                      </p>
+                      <p>
+                        Spring의 버전이 업그레이드가 되면서 Security 구현코드가
+                        바뀌면서 새로 구현해보는 시간이었습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content__tool">
+                  <h2 class="tool__title">TOOL</h2>
+                  <div class="tool__images">
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/spring_logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/jpa_logo-removebg-preview.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/Java-Logo.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/html_css_js-removebg-preview.png"
+                      alt=""
+                    />
+                    <img
+                      class="logo__image"
+                      src="imgs/logo_img/mysql_logo.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="content__image">
+                <a
+                  class="project__link"
+                  href="https://github.com/mollani0704/blog-project"
+                  target="_blank"
+                >
+                  <img
+                    class="project__image"
+                    src="imgs/projects/blog/blog_image2.png"
+                    alt=""
+                  />
+                </a>
+                <div class="image__side__container">
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blog/Login.JPG"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blog/write.JPG"
+                    alt=""
+                  />
+                  <img
+                    class="project__image__side"
+                    src="imgs/projects/blog/signup.JPG"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--
                     <ul class="categories">
                         <li>
                             <button
@@ -987,47 +892,47 @@
                         </li>
                     </ul>
                     -->
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <aside>
-                <!-- 웹 접근성 - a 태그 안에는 아이콘 밖에 없다. 그래서 나중에 스크린리더가 이를 읽어 들일때
+      <aside>
+        <!-- 웹 접근성 - a 태그 안에는 아이콘 밖에 없다. 그래서 나중에 스크린리더가 이를 읽어 들일때
                 아무것도 없어서 의미있는 정보를 전달하기가 어렵다. 그래서 a tag에 title을 달아줌으로써 
                 의미있는 정보를 나타낸다.  -->
-                <a class="arrow-up" href="#home" title="back to up">
-                    <i class="fa-solid fa-arrow-up"></i>
-                </a>
-            </aside>
-        </main>
-        <!-- Footer -->
-        <footer id="contact" class="section">
-            <div class="max-container">
-                <h2 class="title">Let&#39;s talk</h2>
-                <p class="description">mollani0704@gmail.com</p>
-                <ul class="contact__links">
-                    <li>
-                        <a
-                            class="contact__link"
-                            href="https://github.com/mollani0704"
-                            title="my github link"
-                            target="_blank"
-                        >
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="contact__link"
-                            href="https://mollani.tistory.com/"
-                            title="my github link"
-                            target="_blank"
-                        >
-                            <i class="fa-brands fa-blogger-b"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p>©mollani - All rights reserved</p>
-            </div>
-        </footer>
-    </body>
+        <a class="arrow-up" href="#home" title="back to up">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">mollani0704@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/mollani0704"
+              title="my github link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://mollani.tistory.com/"
+              title="my github link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-blogger-b"></i>
+            </a>
+          </li>
+        </ul>
+        <p>©mollani - All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
