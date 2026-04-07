@@ -308,9 +308,10 @@
                   <p class="case-project__meta">삼성물산 · 2025.07 - 2026.02</p>
                   <h3 class="case-project__title">홈닉 이커머스 프로젝트</h3>
                   <p class="case-project__summary">
-                    홈닉 앱 내 커머스 영역에서 상품 상세, 옵션 선택, 쿠폰, 리뷰,
-                    구매 흐름 등 사용자 구매 경험과 직결되는 프론트엔드 기능을
-                    개발했습니다.
+                    기존 Shopby 스킨 의존 구조를 제거하고 React · TypeScript
+                    기반으로 홈닉 이커머스 화면을 자체 구축하며, 상품 상세부터
+                    옵션 선택, 리뷰, Q&amp;A, 쿠폰 다운로드까지 서비스 오픈에
+                    필요한 핵심 구매 경험을 구현했습니다.
                   </p>
                 </div>
 
@@ -318,21 +319,34 @@
                   <div class="case-project__block">
                     <h4>담당 역할</h4>
                     <p>
-                      프론트엔드 개발자로 참여하여 상품 상세 페이지와 구매 흐름
-                      전반의 UI 및 상태 구조를 구현했습니다.
+                      프론트엔드 개발자로 참여하여 Shopby 의존 화면을
+                      자체 구조로 전환하고, 상품 상세 페이지 및 구매 흐름 전반의
+                      UI와 상태 로직을 설계·구현했습니다.
                     </p>
                   </div>
 
                   <div class="case-project__block">
                     <h4>주요 기여</h4>
                     <ul class="project-points">
-                      <li>상품 상세 화면과 옵션 선택 UI 구현</li>
                       <li>
-                        쿠폰 발급 및 적용 흐름에 필요한 상태 관리 로직 구성
+                        Shopby API의 트리형 옵션 데이터를 재귀 기반으로 탐색하는
+                        로직을 설계해 옵션 뎁스와 조합 변화에 유연하게 대응
                       </li>
-                      <li>리뷰 및 Q&A 탭의 데이터 연동과 리스트 구조 개발</li>
                       <li>
-                        공통 컴포넌트 및 화면 구조를 정리해 유지보수성 개선
+                        옵션 선택 시 하위 옵션, 가격, 재고 상태를 동적으로
+                        계산해 비정상 조합 및 오류 케이스 제거
+                      </li>
+                      <li>
+                        TanStack Query와 Infinite Scroll을 적용해 상품 탐색 및
+                        리스트 조회 경험 개선
+                      </li>
+                      <li>
+                        상품 상세, 리뷰, Q&amp;A, 1:1 문의, 쿠폰 다운로드 등
+                        이커머스 핵심 기능 전반 개발 및 서비스 오픈 기여
+                      </li>
+                      <li>
+                        iOS Safari 환경에서만 발생한 UI 깨짐 이슈를 브라우저별
+                        렌더링 차이 관점에서 분석하고 원인 기반으로 수정
                       </li>
                     </ul>
                   </div>
@@ -352,9 +366,11 @@
                   <div class="case-project__block">
                     <h4>핵심 포인트</h4>
                     <p>
-                      상품 상세부터 옵션 선택, 쿠폰 적용, 가격 계산까지 이어지는
-                      구매 흐름을 하나의 상태 구조로 연결하여 사용자 행동에 따라
-                      가격과 UI가 즉시 반영되도록 구현했습니다.
+                      가장 복잡했던 옵션 처리 영역에서 단순 반복문 대신 재귀
+                      기반 탐색 구조를 적용해 깊이가 다른 옵션 트리도 안정적으로
+                      처리할 수 있게 만들었습니다. 그 결과 추가 수정 없이 다양한
+                      옵션 조합을 수용할 수 있었고, 사용자 선택에 따라 가격과
+                      재고 상태가 정확하게 반영되는 구매 흐름을 구현했습니다.
                     </p>
                   </div>
                 </div>
@@ -381,11 +397,31 @@
                       <span class="image-label">Option & Price Flow</span>
                     </div>
                   </figure>
+
+                  <figure class="case-project__shot">
+                    <div class="case-project__image-wrapper">
+                      <img
+                        src="imgs/projects/homeniq/coupon.png"
+                        alt="홈닉 쿠폰 발급 및 혜택 적용 화면"
+                      />
+                      <span class="image-label">Coupon Benefit</span>
+                    </div>
+                  </figure>
+
+                  <figure class="case-project__shot">
+                    <div class="case-project__image-wrapper">
+                      <img
+                        src="imgs/projects/homeniq/review.png"
+                        alt="홈닉 리뷰 및 사용자 피드백 화면"
+                      />
+                      <span class="image-label">Review Experience</span>
+                    </div>
+                  </figure>
                 </div>
 
                 <p class="case-project__caption">
-                  상품 상세 화면에서 옵션 선택, 혜택 확인, 최종 금액 반영까지
-                  이어지는 구매 흐름을 중심으로 구현한 화면입니다.
+                  상품 상세, 옵션 선택, 쿠폰 혜택, 리뷰 확인까지 구매 전환에
+                  영향을 주는 핵심 화면을 중심으로 구현한 작업입니다.
                 </p>
               </div>
             </article>
